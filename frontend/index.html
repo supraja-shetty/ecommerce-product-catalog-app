@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>E-Commerce Product Catalog App</h1>
+
+    <div class="controls">
+        <input type="text" id="search" placeholder="Search products...">
+        <button onclick="searchProduct()">Search</button>
+
+        <select onchange="filterCategory(this.value)">
+            <option value="">All</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Books">Books</option>
+            <option value="Accessories">Accessories</option>
+        </select>
+        <select onchange="sortProducts(this.value)">
+    <option value="">Sort</option>
+    <option value="low">Price Low → High</option>
+    <option value="high">Price High → Low</option>
+</select>
+<input type="text" id="user" placeholder="Username">
+<input type="password" id="pass" placeholder="Password">
+<button onclick="login()">Login</button>
+
+<script>
+function login() {
+    localStorage.setItem("user", document.getElementById("user").value);
+    alert("Logged in!");
+    window.location.href = "index.html";
+}
+</script>
+
+        <a href="cart.html" class="cart-link">
+            Cart (<span id="count">0</span>)
+        </a>
+    </div>
+</div>
+
+<div id="products" class="grid"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
