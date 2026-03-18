@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "category": "Electronics",
+    "price": 55000,
+    "description": "High performance laptop",
+    "image": "images/laptop.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Phone",
+    "category": "Electronics",
+    "price": 20000,
+    "description": "Smartphone with great features",
+    "image": "images/phone.jpg"
+  },
+  {
+    "id": 3,
+    "name": "T-Shirt",
+    "category": "Clothing",
+    "price": 500,
+    "description": "Comfortable cotton t-shirt",
+    "image": "images/tshirt.jpg"
+  },
+  {
+  "id": 4,
+  "name": "Headphones",
+  "category": "Electronics",
+  "price": 1500,
+  "description": "Wireless over-ear headphones",
+  "image": "images/Headphones.jpg"
+},
+{
+  "id": 5,
+  "name": "Smart Watch",
+  "category": "Electronics",
+  "price": 3000,
+  "description": "Fitness tracking smartwatch",
+  "image": "images/watch.jpg"
+},
+{
+  "id": 6,
+  "name": "Jeans",
+  "category": "Clothing",
+  "price": 1200,
+  "description": "Stylish denim jeans",
+  "image": "images/jeans.jpg"
+},
+{
+  "id": 7,
+  "name": "Shoes",
+  "category": "Clothing",
+  "price": 2500,
+  "description": "Comfortable running shoes",
+  "image": "images/shoes.jpg"
+},
+{
+  "id": 8,
+  "name": "Backpack",
+  "category": "Accessories",
+  "price": 800,
+  "description": "Durable travel backpack",
+  "image": "images/bag.jpg"
+},
+{
+  "id": 9,
+  "name": "Tablet",
+  "category": "Electronics",
+  "price": 15000,
+  "description": "Portable tablet with HD display",
+  "image": "images/tablet.jpg"
+},
+{
+  "id": 10,
+  "name": "Jacket",
+  "category": "Clothing",
+  "price": 2200,
+  "description": "Warm winter jacket",
+  "image": "images/jacket.jpg"
+},
+{
+  "id": 11,
+  "name": "Book - Python Basics",
+  "category": "Books",
+  "price": 600,
+  "description": "Beginner friendly Python programming book",
+  "image": "images/book.jpg"
+},
+{
+  "id": 12,
+  "name": "Sunglasses",
+  "category": "Accessories",
+  "price": 900,
+  "description": "Stylish UV protection sunglasses",
+  "image": "images/sunglasses.jpg"
+}
+]

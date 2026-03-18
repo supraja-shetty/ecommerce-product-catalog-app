@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+</head>
+<body>
+
+<h2>Product Details</h2>
+
+<div id="details"></div>
+
+<script src="script.js"></script>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+console.log("Product ID:", id);  // DEBUG
+
+fetch(`http://127.0.0.1:5000/products/${id}`)
+.then(res => res.json())
+.then(p => {
+
+    console.log("Product Data:", p);  // DEBUG
+
+    if (!p) {
+        document.getElementById("details").innerHTML = "<h3>Product not found ❌</h3>";
+        return;
+    }
+
+    document.getElementById("details").innerHTML = `
+        <img src="${p.image}" width="300">
+        <h2>${p.name}</h2>
+        <p>${p.description}</p>
+        <h3>₹${p.price}</h3>
+
+        <button onclick="addToCart(${p.id})">Add to Cart</button>
+        <button onclick="addToWishlist(${p.id})">❤️ Wishlist</button>
+    `;
+})
+.catch(err => {
+    console.error(err);
+    document.getElementById("details").innerHTML = "<h3>Error loading product ❌</h3>";
+});
+</script>
+
+</body>
+</html>
